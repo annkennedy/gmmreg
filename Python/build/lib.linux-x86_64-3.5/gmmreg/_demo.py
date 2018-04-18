@@ -3,7 +3,7 @@
 
 import time
 import subprocess
-import ConfigParser
+import configparser
 
 from numpy import loadtxt
 

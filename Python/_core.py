@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 #coding=utf-8
 
-import ConfigParser
+import configparser
 import time
 from math import cos,sin,log,exp,sqrt
 from numpy import loadtxt,arange,array,dot,delete,reshape,kron,eye,ones,zeros,trace,s_,r_,c_,squeeze
 from numpy.linalg import svd,qr,norm
 from scipy.optimize import fmin_bfgs, fmin_l_bfgs_b
-from _extension import *
+from c_extension import *
 #import _plotting
 
 
