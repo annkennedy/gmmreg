@@ -82,7 +82,7 @@ def transform_points(param, basis):
     Perform the thin-plate spline transform.
     """
     (nL,n) = basis.shape
-    d = param.shape[0]/n
+    d = int(param.shape[0]/n)
     affine_param = param[0:d*(d+1)].reshape(d+1,d)
     tps_param = param[d*(d+1):d*n].reshape(n-d-1,d)
     after_tps = dot(basis,r_[affine_param,tps_param])
