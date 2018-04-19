@@ -215,7 +215,7 @@ def run_ini(f_config):
     section_common = 'FILES'
     section_option = 'GMMREG_OPT'
 
-    c = ConfigParser.ConfigParser()
+    c = configparser.ConfigParser()
     c.read(f_config)
     model_file = c.get(section_common,'model')
     scene_file = c.get(section_common,'scene')
